@@ -1,0 +1,105 @@
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 260px);
+  height: 86px;
+  position: fixed;
+  right: 0;
+  padding: 0 40px;
+  gap: 40px;
+  background-color: var(--white);
+  box-shadow: 6px 0 12px rgba(0, 0, 0, .08);
+  z-index: 100;
+  /* position: relative; */
+}
+header .top_center span {
+  font-size: 1.4rem;
+}
+header .top_center span:first-child {
+  font-family: var(--font-b);
+  line-height: 1.9rem;
+  margin-right: 6px;
+}
+header .top_center span:nth-child(2) {
+  font-family: var(--font-l);
+  color: rgba(72, 72, 72, .4);
+  margin-right: 9px;
+}
+header .top_center span:last-child {
+  font-family: var(--font-m);
+  text-decoration: underline;
+}
+header .top_center {
+  padding: 31px 0
+}
+header .top_center span {
+  display: inline-block;
+}
+header .top_right {
+  padding: 31px 0;
+  right: 24px;
+  color: rgba(72, 72, 72, .4);
+  font-family: var(--font-l);
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+}
+
+/* nav */
+.nav {
+  position: fixed;
+  width: 260px;
+  height: 100vh;
+  background-color: #166363;
+  z-index: 100;
+  /* padding-top: 15px; */
+}
+.nav ul {
+  position: relative;
+}
+.nav ul::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  bottom: -16px;
+  background-color: #135A5A;
+}
+.nav ul li {
+  width: 100%;
+  height: 60px;
+  /* display: flex; */
+}
+.nav ul > a {
+  height: 86px;
+  background-color: var(--white);
+  padding: 19px 0;
+  border-right: 1px solid #E8E8E8;
+}
+nav {
+  padding-top: 15px;
+}
+.nav ul li a {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-left: 30px;
+  color: var(--white);
+  font-family: var(--font-m);
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  transition: all .5s;
+  /* background-color: var(--sub-color); */
+}
+.nav ul li a:hover {
+  background-color: var(--sub-color);
+}
+.nav ul li a div {
+  width: 16px;
+}
+.nav ul li a.router-link-active {
+  background-color: var(--sub-color);
+}
